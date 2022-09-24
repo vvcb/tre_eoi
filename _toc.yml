@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: 00_intro
+root: index
 chapters:
 - file: 10_respondent_details
 - file: 20_matched_funding
