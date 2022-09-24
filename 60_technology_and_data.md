@@ -61,3 +61,12 @@ Todo:
 ```{note}
 Outline your roadmap to meet the mandatory requirements for SDE accreditation. See (Appendix C) for full detail of requirements.
 ```
+
+In very simple terms, LSC intend to work with Microsoft to further co-develop the open source AzureTRE (<https://microsoft.github.io/AzureTRE/>) architecture. _Include details of Azure TRE here._
+
+Map some of this to Appedix C (SDE specifications):
+
+- Metadata catalogue and self-discovery, eg. <https://github.com/amundsen-io/amundsen> or Azure Purview
+- Data governance and data lifecycle managememt - Azure Purview
+- Workspace level data governance - eg. Azure ML workspace capabilities
+- Tools for anonymisation/pseudonymisation eg. <https://amnesia.openaire.eu/>
