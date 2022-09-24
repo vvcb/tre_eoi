@@ -38,15 +38,15 @@ jobs:
     # Install requirements.txt
     - name: Install requirements
       run: |
-        pip install -r tre_eoi/requirements.txt
+        pip install -r requirements.txt
     # Build the example book
     - name: Build book
       run: |
-        jupyter-book build tre_eoi/
+        jupyter-book build .
     # Deploy html to gh-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: tre_eoi/_build/html
+        publish_dir: _build/html
         publish_branch: gh-pages
