@@ -329,12 +329,36 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lsc">
+   LSC
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -346,6 +370,19 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lsc">
+   LSC
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -358,18 +395,74 @@ title="Print to PDF"
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Provide information about your SDE for R&amp;D design and the technologies you intend to use.</p>
-<p>This should include:
-• Technical architecture<br />
-• Infrastructure and data warehousing
-• Data processing and curation
-• Analytical tooling
-• Privacy Enhancing Technologies
-• Data discoverability</p>
+<p>This should include:</p>
+<ul class="simple">
+<li><p>Technical architecture</p></li>
+<li><p>Infrastructure and data warehousing</p></li>
+<li><p>Data processing and curation</p></li>
+<li><p>Analytical tooling</p></li>
+<li><p>Privacy Enhancing Technologies</p></li>
+<li><p>Data discoverability</p></li>
+</ul>
 </div>
+<section id="lsc">
+<h2>LSC<a class="headerlink" href="#lsc" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Microsoft Azure</p></li>
+</ul>
+<p>High level architecture:</p>
+<ul class="contains-task-list simple">
+<li><p>Landing Zone, AVD (VDI) environment, TRE environment</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Include high level architecture diagrams</p></li>
+</ul>
+<p>Networking:</p>
+<ul class="simple">
+<li><p>Express Route connects Azure to On-Prem network</p></li>
+<li><p>All assets within Azure TRE are protected with private endpoints and accessed through peered private VNETs</p></li>
+<li><p>Azure Firewall and Bastion setup for vendor access</p></li>
+</ul>
+<p>Authentication/Authorisation:</p>
+<ul class="simple">
+<li><p>Extensive use of Azure Active Directory and</p></li>
+<li><p>Based around principle of least privilige</p></li>
+</ul>
+<p>Data Warehousing:</p>
+<ul class="simple">
+<li><p>Currently uses Azure Data Lake Storage V2 (with Azure Files, Blob, Storage Queues and Table storage)</p></li>
+<li><p>Proposal to use Azure Synapse / Snowflake</p></li>
+</ul>
+<p>Analytical tooling:</p>
+<ul class="simple">
+<li><p>JupyterHub on Azure Kubernetes Service</p>
+<ul>
+<li><p>Language support: Python, R, Julia, Octave</p></li>
+<li><p>Interface support: JupyterLab, Jupyter Notebooks, RStudio Server</p></li>
+</ul>
+</li>
+<li><p>Azure Virtual Desktop</p>
+<ul>
+<li><p>Custom built Windows 10 Desktop Enterprise Data Science Image</p></li>
+<li><p>Language support: Python, R (and possibly any other as required)</p></li>
+<li><p>IDE support: VSCode, Jupyter, RStudio</p></li>
+<li><p>Database tools: SQL Server Managament Studio, DBeaver, DBBrowser</p></li>
+<li><p>Statistical software: JASP</p></li>
+<li><p>Productivity tools: Office 365</p></li>
+</ul>
+</li>
+</ul>
+<p>Todo:</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> High level architecture diagrams</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Differentiate between TRE and SDE</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Include AzureTRE architecture and our work so far</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> OHDSI/OMOP</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> OpenSAFELY proposal that was discussed with Ben Goldacre in July/August</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Outline your roadmap to meet the mandatory requirements for SDE accreditation. See (Appendix C) for full detail of requirements.</p>
 </div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
