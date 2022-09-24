@@ -352,9 +352,43 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lsc">
-   LSC
+  <a class="reference internal nav-link" href="#technical-architecture">
+   Technical architecture
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#high-level-architecture">
+     High level architecture
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#networking">
+     Networking
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#authentication-authorisation">
+     Authentication/Authorisation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-warehousing">
+   Data Warehousing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analytical-tooling">
+   Analytical tooling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ohdsi-analytics-stack">
+     OHDSI Analytics Stack
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -376,9 +410,43 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lsc">
-   LSC
+  <a class="reference internal nav-link" href="#technical-architecture">
+   Technical architecture
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#high-level-architecture">
+     High level architecture
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#networking">
+     Networking
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#authentication-authorisation">
+     Authentication/Authorisation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-warehousing">
+   Data Warehousing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#analytical-tooling">
+   Analytical tooling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ohdsi-analytics-stack">
+     OHDSI Analytics Stack
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -392,6 +460,18 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="technology-and-data">
 <h1>TECHNOLOGY AND DATA<a class="headerlink" href="#technology-and-data" title="Permalink to this headline">#</a></h1>
+<p>Todo:</p>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> High level architecture diagrams</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Differentiate between TRE and SDE</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Include AzureTRE architecture and our work so far</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> OHDSI/OMOP</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Add section on how this benefits federation and our region</p></li>
+</ul>
+</li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> OpenSAFELY proposal that was discussed with Ben Goldacre in July/August</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Provide information about your SDE for R&amp;D design and the technologies you intend to use.</p>
@@ -405,33 +485,43 @@ title="Print to PDF"
 <li><p>Data discoverability</p></li>
 </ul>
 </div>
-<section id="lsc">
-<h2>LSC<a class="headerlink" href="#lsc" title="Permalink to this headline">#</a></h2>
+<section id="technical-architecture">
+<h2>Technical architecture<a class="headerlink" href="#technical-architecture" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Microsoft Azure</p></li>
 </ul>
-<p>High level architecture:</p>
+<section id="high-level-architecture">
+<h3>High level architecture<a class="headerlink" href="#high-level-architecture" title="Permalink to this headline">#</a></h3>
 <ul class="contains-task-list simple">
 <li><p>Landing Zone, AVD (VDI) environment, TRE environment</p></li>
 <li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Include high level architecture diagrams</p></li>
 </ul>
-<p>Networking:</p>
+</section>
+<section id="networking">
+<h3>Networking<a class="headerlink" href="#networking" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Express Route connects Azure to On-Prem network</p></li>
 <li><p>All assets within Azure TRE are protected with private endpoints and accessed through peered private VNETs</p></li>
 <li><p>Azure Firewall and Bastion setup for vendor access</p></li>
 </ul>
-<p>Authentication/Authorisation:</p>
+</section>
+<section id="authentication-authorisation">
+<h3>Authentication/Authorisation<a class="headerlink" href="#authentication-authorisation" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>Extensive use of Azure Active Directory and</p></li>
 <li><p>Based around principle of least privilige</p></li>
 </ul>
-<p>Data Warehousing:</p>
+</section>
+</section>
+<section id="data-warehousing">
+<h2>Data Warehousing<a class="headerlink" href="#data-warehousing" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>Currently uses Azure Data Lake Storage V2 (with Azure Files, Blob, Storage Queues and Table storage)</p></li>
 <li><p>Proposal to use Azure Synapse / Snowflake</p></li>
 </ul>
-<p>Analytical tooling:</p>
+</section>
+<section id="analytical-tooling">
+<h2>Analytical tooling<a class="headerlink" href="#analytical-tooling" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p>JupyterHub on Azure Kubernetes Service</p>
 <ul>
@@ -450,14 +540,30 @@ title="Print to PDF"
 </ul>
 </li>
 </ul>
-<p>Todo:</p>
-<ul class="contains-task-list simple">
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> High level architecture diagrams</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Differentiate between TRE and SDE</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Include AzureTRE architecture and our work so far</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> OHDSI/OMOP</p></li>
-<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> OpenSAFELY proposal that was discussed with Ben Goldacre in July/August</p></li>
-</ul>
+<section id="ohdsi-analytics-stack">
+<h3>OHDSI Analytics Stack<a class="headerlink" href="#ohdsi-analytics-stack" title="Permalink to this headline">#</a></h3>
+<p><strong><a class="reference external" href="https://www.ohdsi.org/">OHDSI (Observational Health Data Sciences and Informatics)</a></strong> is multi-stakeholder, interdisciplinary collaborative to derive value out of health data through large-scale analytics using open-source tools</p>
+<p>The <strong><a class="reference external" href="https://www.ohdsi.org/data-standardization/">OMOP - Common Data Model</a></strong> allows for the systematic analysis of disparate observational databases by transforming data contained within those databases into a common format (data model).
+This allows for federated analyses of multiple such databases held at different sites using standard analytic routines without the need to share the underlying data.</p>
+<p>The OHDSI network have also created <strong><a class="reference external" href="https://athena.ohdsi.org/">Athena</a></strong>, a searchable repository of harmonised standard vocabularies.
+This is used to map source data to internationally recognised ontologies such as SNOMED, ICD10, LOINC or other ontology of choice, making it interoperable with other similarly mapped data</p>
+<p>Once source data has been converted into the OMOP model, this can be subject to exploration and advanced analytics using a large ecosystem of <a class="reference external" href="https://www.ohdsi.org/software-tools/">open-source tools</a>.</p>
+<p><strong><a class="reference external" href="https://github.com/OHDSI/Atlas">ATLAS</a></strong> is an open source software tool for researchers to conduct scientific analyses on standardized observational data converted to the OMOP Common Data Model V5.
+Researchers can create cohorts by defining groups of people based on an exposure to a drug or diagnosis of a particular condition using healthcare claims data.
+ATLAS has vocabulary searching of medical concepts to identify people with specific conditions, drug exposures etc.
+Patient profiles can be viewed within a specific cohort allowing visualization of a particular subject’s health care records.
+Population effect level estimation analyses allows for comparison of two different cohorts and leverages R packages.</p>
+<p>ATLAS by design does not reveal patient identifiable information and the built-in privacy preserving features of the OHDSI stack can be enhanced by following further steps during the data transformation process as described here <a class="reference external" href="https://ohdsi.github.io/CommonDataModel/cdmPrivacy.html">https://ohdsi.github.io/CommonDataModel/cdmPrivacy.html</a>.</p>
+<figure class="align-default" id="omop-atlas">
+<a class="reference internal image-reference" href="_images/omop_atlas.png"><img alt="_images/omop_atlas.png" src="_images/omop_atlas.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">OHDSI ATLAS Web Interface</span><a class="headerlink" href="#omop-atlas" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong><a class="reference external" href="https://ohdsi.github.io/Hades/">HADES</a></strong> is a set of open source R packages for large scale analytics, including population characterization, population-level causal effect estimation, and patient-level prediction.</p>
+<p><strong>OHDSI International Community</strong></p>
+<p>Global collaborators: <a class="reference external" href="https://www.ohdsi.org/who-we-are/collaborators/">https://www.ohdsi.org/who-we-are/collaborators/</a>
+UK Partners: <a class="reference external" href="https://www.ehden.eu/datapartners/">https://www.ehden.eu/datapartners/</a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Outline your roadmap to meet the mandatory requirements for SDE accreditation. See (Appendix C) for full detail of requirements.</p>
@@ -470,6 +576,7 @@ title="Print to PDF"
 <li><p>Workspace level data governance - eg. Azure ML workspace capabilities</p></li>
 <li><p>Tools for anonymisation/pseudonymisation eg. <a class="reference external" href="https://amnesia.openaire.eu/">https://amnesia.openaire.eu/</a></p></li>
 </ul>
+</section>
 </section>
 </section>
 

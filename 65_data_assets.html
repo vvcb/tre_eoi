@@ -329,12 +329,41 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#todo">
+   Todo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ohdsi-omop">
+   OHDSI/OMOP
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -346,6 +375,24 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#todo">
+   Todo
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ohdsi-omop">
+   OHDSI/OMOP
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -355,11 +402,44 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="data-assets">
 <h1>DATA ASSETS<a class="headerlink" href="#data-assets" title="Permalink to this headline">#</a></h1>
+<section id="todo">
+<h2>Todo<a class="headerlink" href="#todo" title="Permalink to this headline">#</a></h2>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Shorten this section. Move some of this to the <em>technology and data</em> section</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Add links to OHDSI web resources</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Include CDM image</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>What data assets do you intend to make available to researchers in your SDE for R&amp;D? What data assets will be available by March 2025?</p>
 <p>A template is provided (Appendix F) for you to complete, should you wish.</p>
 </div>
+</section>
+<section id="ohdsi-omop">
+<h2>OHDSI/OMOP<a class="headerlink" href="#ohdsi-omop" title="Permalink to this headline">#</a></h2>
+<p>Lancashire Teaching Hospitals NHS Trust has built a cloud-first, scalable, secure, trusted research environment (TRE) on Microsoft Azure which will be fed by this warehouse, enabling research, academic and commercial collaboration and support the move to early intervention and prevention.</p>
+<p>The TRE architecture is scalable across the ICS and will ensure interoperability to allow federated access and collaboration between teams across care settings as well as in academia.</p>
+<p>LTHTR is also a member of the Health Data Research UK Alliance further demonstrating our commitment to open, collaborative, big-data research for population health.</p>
+<p>Standardising multiple data sources into a single common data model has significant benefits that include easier data discovery, reproducible analysis and federated research using anonymised datasets.</p>
+<p>LTH has used Quadramed (Harris Healthcare) as its primary electronic health record (EHR) for nearly 15 years.
+This has resulted in a large amount of longitudinally collected patient data for over 2.2 million patients.
+LTH also has multiple other application specific databases that continue to collect valuable data.</p>
+<p>At present this data is stored in multiple data silos in non-standard data models and databases which makes large scale data analytics very difficult and often impossible.
+This poses significant problems in getting value out of this data for the benefit of our patients through service improvement projects or research.
+Moreover, we are unable to collaborate with other NHS organisations both within the ICS and the wider NHS without allocating significant resources to standardising data to a conformant format.</p>
+<p>Data standardization is the critical process of bringing data into a common format that allows for collaborative, large-scale analytics, and sharing of sophisticated tools and methodologies.
+The Observational Health Data Sciences and Informatics (or OHDSI, pronounced “Odyssey”) program is a multi-stakeholder, interdisciplinary collaborative to bring out the value of health data through large-scale analytics.
+The OMOP Common Data Model allows for the systematic analysis of disparate observational databases.</p>
+<figure class="align-default" id="omop-cdm">
+<a class="reference internal image-reference" href="_images/omop_cdm54.png"><img alt="_images/omop_cdm54.png" src="_images/omop_cdm54.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">OMOP Common Data Model 5.4</span><a class="headerlink" href="#omop-cdm" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The concept behind this approach is to transform data contained within those databases into a common format (data model) as well as a common representation (terminologies, vocabularies, coding schemes), and then perform systematic analyses using a library of standard analytic routines that have been written based on the common format.
+Once a database has been converted to the OMOP CDM, evidence can be generated using standardized analytics tools.</p>
+<p>OHDSI have developed Open-Source tools for data quality and characterization, medical product safety surveillance, comparative effectiveness, quality of care, and patient-level predictive modelling, but there are also other sources of such tools, some of them commercial.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
