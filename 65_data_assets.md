@@ -14,12 +14,6 @@ A template is provided (Appendix F) for you to complete, should you wish.
 
 ## OHDSI/OMOP
 
-Lancashire Teaching Hospitals NHS Trust has built a cloud-first, scalable, secure, trusted research environment (TRE) on Microsoft Azure which will be fed by this warehouse, enabling research, academic and commercial collaboration and support the move to early intervention and prevention.
-
-The TRE architecture is scalable across the ICS and will ensure interoperability to allow federated access and collaboration between teams across care settings as well as in academia.
-
-LTHTR is also a member of the Health Data Research UK Alliance further demonstrating our commitment to open, collaborative, big-data research for population health.
-
 Standardising multiple data sources into a single common data model has significant benefits that include easier data discovery, reproducible analysis and federated research using anonymised datasets.
 
 LTH has used Quadramed (Harris Healthcare) as its primary electronic health record (EHR) for nearly 15 years.

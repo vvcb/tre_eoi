@@ -17,4 +17,4 @@ Precedents to build upon:
 
 Flowcharts:
 
-![DARS Flowchart](./images/tre_dars_flowchart.PNG)
+![DARS Flowchart](./images/tre_dars_flowchart.png)
