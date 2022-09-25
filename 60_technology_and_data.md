@@ -7,14 +7,14 @@ Todo:
 - [ ] Include AzureTRE architecture and our work so far
 - [ ] Include ICS BI Datawarehouse details (BedRock) here - and in data assets section next
 - [x] OHDSI/OMOP
-  - [ ] Add section on how this benefits federation and our region
+- [ ] Add section on how this benefits federation and our region
 - [ ] OpenSAFELY proposal that was discussed with Ben Goldacre in July/August
 
 ```{note}
 Provide information about your SDE for R&D design and the technologies you intend to use.
 
 This should include:
-- Technical architecture  
+- Technical architecture 
 - Infrastructure and data warehousing
 - Data processing and curation
 - Analytical tooling
@@ -31,6 +31,22 @@ LTHTR is also a member of the Health Data Research UK Alliance further demonstra
 ## Core functions
 
 Highly secure and robust technical architecture AND processes to ensure compliance with 5-safes
+We have enganged the professional services of Prof. Felix Ritchie, University of West of England and the author of the Five-Safes priniciples to advise us as during the development and implementation of the TRE.
+
+The solution proposed adds immediate value through leveraging proven solutions, standards and best-practice structures already in use across the North West.
+The proposed solution has interoperability and scalability at the core of its design and allows cooperation between a broad alliance of clinical, industrial and academic contributors.
+
+We propose a decoupled design whereby the analytics layer is developed independent of the data layer while ensuring interoperability between the two.
+
+This will provide quick wins designed around providing actionable insight to pressing ICS priorities by integrating diverse, unique datasets such as: social prescribing, Personal Online Data Stores, ORCHA app prescriptions while allowing for a unified data lake to evolve over time.
+The analytics layer is not entirely dependent on the underlying data layer to become operational.
+
+The bid builds on existing partnerships and will create a trusted facility for multi-disciplinary, interagency collaboration to provide a richer picture of care and the capacity to upskill the combined workforce, enabling truly joined-up strategic needs assessment and empowering agile, precise population health insights.
+
+The _Ethical Assurance, Clinical & Information Governance Frameworks_ will promote public and professional trust in the secondary use of sensitive data, emphasising the openness of the architecture, transparency of the infrastructure and information flows, and explainability of models used to support decision-making.
+
+The interoperability and open-source assets that power the facility will ‘future-proof’ it to comply with and adapt to technical requirements imposed by national & international funders, enable peer review, and retention of skilled staff to maintain, develop and exploit it.
+It will reduce data & process duplication and improve analytic efficiencies across the health and social care economy, and facilitate collaboration with industry to get value of out data
 
 ### SAFE SETTINGS
 
@@ -86,15 +102,15 @@ Highly secure and robust technical architecture AND processes to ensure complian
 ## Analytical tooling
 
 - JupyterHub on Azure Kubernetes Service
-  - Language support: Python, R, Julia, Octave
-  - Interface support: JupyterLab, Jupyter Notebooks, RStudio Server
+- Language support: Python, R, Julia, Octave
+- Interface support: JupyterLab, Jupyter Notebooks, RStudio Server
 - Azure Virtual Desktop
-  - Custom built Windows 10 Desktop Enterprise Data Science Image
-  - Language support: Python, R (and possibly any other as required)
-  - IDE support: VSCode, Jupyter, RStudio
-  - Database tools: SQL Server Managament Studio, DBeaver, DBBrowser
-  - Statistical software: JASP
-  - Productivity tools: Office 365
+- Custom built Windows 10 Desktop Enterprise Data Science Image
+- Language support: Python, R (and possibly any other as required)
+- IDE support: VSCode, Jupyter, RStudio
+- Database tools: SQL Server Managament Studio, DBeaver, DBBrowser
+- Statistical software: JASP
+- Productivity tools: Office 365
 
 ### OHDSI Analytics Stack
 
