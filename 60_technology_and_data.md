@@ -5,6 +5,7 @@ Todo:
 - [ ] High level architecture diagrams
 - [ ] Differentiate between TRE and SDE
 - [ ] Include AzureTRE architecture and our work so far
+- [ ] Include ICS BI Datawarehouse details (BedRock) here - and in data assets section next
 - [x] OHDSI/OMOP
   - [ ] Add section on how this benefits federation and our region
 - [ ] OpenSAFELY proposal that was discussed with Ben Goldacre in July/August
@@ -21,12 +22,48 @@ This should include:
 - Data discoverability
 ```
 
-## Technical architecture
+Lancashire Teaching Hospitals NHS Trust has built a cloud-first, scalable, secure, trusted research environment (TRE) on Microsoft Azure which will enable research, academic and commercial collaboration and support the move to early intervention and prevention.
+
+The TRE architecture is scalable across the ICS and will ensure interoperability to allow federated access and collaboration between teams in different care settings, academia and industry partners across the region, and globally.
+
+LTHTR is also a member of the Health Data Research UK Alliance further demonstrating our commitment to open, collaborative, big-data research for population health.
+
+## Core functions
+
+Highly secure and robust technical architecture AND processes to ensure compliance with 5-safes
+
+### SAFE SETTINGS
+
+- Secure, customisable, scalable, collaborative, cost-effective environments for advanced data analytics
+
+### SAFE PROJECTS
+
+- TRE DARS + Existing processes (eg. REC)
+
+### SAFE PEOPLE
+
+- Researcher training, accreditation; Identity management; User access lifecycle management
+
+### SAFE DATA
+
+- Data/Metadata catalogues to empower self-discovery of data assets for research.
+- Common data models for federated research
+- Privacy preserving architectures such as OpenSAFELY
+- Pseudonymisation/anonymisation depending on use cases
+
+### SAFE OUTPUTS
+
+- SDC, ML model lifecycle management, explainability tools,
+- Interoperability with other visualisation / decision support tools
+- NEXUS Intelligence (Population Health Management Platform)
+- Aristotle (MLCSU's visualisation platform to support commissioning)
+- CIPHA Population Health platform
+- Business Intelligence
+- Risk stratification / clinical decision support
+
+## Technical Architecture
 
 - Microsoft Azure
-
-### High level architecture
-
 - Landing Zone, AVD (VDI) environment, TRE environment
 - [ ] Include high level architecture diagrams
 
