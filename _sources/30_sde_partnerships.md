@@ -25,6 +25,8 @@ Please provide the names of additional organisations that intend to join, or are
 
 - [ ] ?Leeds/Yorkshire
 - [ ] Can we include OMOP federation?
+- [ ] North West Ambulance Service
+- [ ] Social care
 
 ```{note}
 What is the size of the local GP registered population covered by the Integrated Care Boards included in your SDE for R&D?
