@@ -1,5 +1,9 @@
 # KEY RESEARCH PARTNERSHIPS
 
+- [ ] Need details on Neurosciences Exemplar TRE - brief section here and a longer version as supporting documentation.
+- [ ] Data science student placements and complementary peers projects
+- [ ] Modify complementary peers image with NWTRE team instead of LTH datascience team
+
 ```{note}
 Describe existing successful research partnerships within your locality, particularly those focused on large-scale data sharing and analysis. This may include partnerships with Life Sciences or MedTech companies, Academia, or not-for-profit organisations.
 ```
@@ -31,9 +35,23 @@ Friends and Family Test Sentiment Analysis
 Frailty, Colorectal cancer
 : Data science student projects led by clinical staff and supported by data science team, Lancaster University and University of Manchester
 
+```{figure} ./images/complementary_peers.png
+---
+width: 800px
+---
+Complementary Peers Projects
+```
+
 Patient Flow Modelling: Lancaster University
 : Co-design collaboration with Imagination Lancaster and Data Science Institute
   Multi-disciplinary workshops, complex patient flow, physiological burden and demand modelling
+
+```{figure} ./images/patient_flow_imagination_lancaster.png
+---
+width: 800px
+---
+Patient Flow Modelling with [Imagination Lancaster](https://imagination.lancaster.ac.uk/)
+```
 
 GynaeOncology Patient Outcomes Dataset
 : University of Manchester
@@ -41,4 +59,4 @@ GynaeOncology Patient Outcomes Dataset
 
 Risk Stratified Clinical Harm Reviews
 : Supports pragmatic prioritisation of high risk patients for clinical harm reviews
- BI Dashboard that uses algorithm running in LANDER data science cloud computing cluster
+  BI Dashboard that uses algorithm running in LANDER data science cloud computing cluster
