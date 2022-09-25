@@ -1,6 +1,8 @@
 # LSC TRE EOI
 
-Draft of LSC components of SNTRE EOI
+Draft of North West SNTRE EOI
+
+## Contents
 
 ```{tableofcontents}
 ```
