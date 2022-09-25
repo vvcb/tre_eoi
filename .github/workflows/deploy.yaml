@@ -32,13 +32,14 @@ jobs:
     - name: Install requirements
       run: |
         pip install -r requirements.txt
-    # Build the example book
-    - name: Build book
-      run: |
-        jupyter-book build .
+    # Build the PDF first (creates a single page HTML)
     - name: Build PDF
       run: |
         jb build . --builder pdfhtml
+    # Build the multi-page HTML version and copy PDF into it.
+    - name: Build HTML book (creates multi-page HTML)
+      run: |
+        jupyter-book build .
         cp _build/pdf/book.pdf _build/html/tre_eoi.pdf
     # Deploy html to gh-pages
     - name: GitHub Pages action
