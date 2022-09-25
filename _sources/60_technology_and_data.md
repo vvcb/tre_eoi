@@ -112,7 +112,7 @@ It will reduce data & process duplication and improve analytic efficiencies acro
 - Statistical software: JASP
 - Productivity tools: Office 365
 
-### OHDSI Analytics Stack
+## OHDSI Analytics Stack
 
 __[OHDSI (Observational Health Data Sciences and Informatics)](https://www.ohdsi.org/)__ is multi-stakeholder, interdisciplinary collaborative to derive value out of health data through large-scale analytics using open-source tools
 
@@ -146,6 +146,28 @@ __OHDSI International Community__
 
 Global collaborators: <https://www.ohdsi.org/who-we-are/collaborators/>
 UK Partners: <https://www.ehden.eu/datapartners/>
+
+## AzureTRE
+
+LSC have tested the [AzureTRE](https://microsoft.github.io/AzureTRE) within their dev environment.
+We intend to deploy AzureTRE for a clinical research study involving the world's largest multi-modal dataset for diabetic foot ulcer disease.
+This will make use of [Azure Machine Learning Workspaces](https://azure.microsoft.com/en-gb/services/machine-learning/) to manage the entire research lifecycle from data preparation, labelling, model development, model management including explainability and deployment through a mobile application called [FootSnap](https://dfu-challenge.github.io/footsnap/) in clinical trials in LTH diabetic foot ulcer clinic.
+
+## OpenSAFELY
+
+LSC have had initial discussions with Prof. Ben Goldacre and his team regarding deploying [OpenSAFELY](https://www.opensafely.org/) within their cloud environment.
+We are in the process of collating use cases with standardised datasets for this and expect to be able to have this operational in Q4/2002.
+
+## CogStack
+
+LSC are an early adopter site for [CogStack](https://cogstack.org/) and LTH has signed an agreement with King's College London to use their advanced NLP models.
+This project focusses on the “translational aspects” of NLP/CogStack with opportunities to refine the underlying models for multiple specialities.
+We have developed a cloud-native, fault-tolerant, auto-scaling, general medical text analysis pipeline within LANDER that can be applied to millions of documents including clinic letters, radiology reports and free text from EPR.
+We are working with the [NHSX PhD Internship program](https://nhsx.github.io/nhsx-internship-projects/) to advertise this project and the successful candidate will work to refine this further.
+The initial focus will be on 6 million clinic documents with other unstructured text data from our EPR, radiology reports and pathology reports to follow.
+The successful candidate will be embedded within the data science team at LTH.
+The parts of the solution that are not specific to LTH will be open-sourced on GitHub under the MIT-license with a particular focus on sharing this code back with the CogStack community.
+The candidate will be peered with a neurology junior doctor with a good understanding of Python programming and neurology domain knowledge and together they will deliver on the Neurology/Epilepsy use case within our Exemplar Neurosciences TRE.
 
 ```{note}
 Outline your roadmap to meet the mandatory requirements for SDE accreditation. See (Appendix C) for full detail of requirements.
