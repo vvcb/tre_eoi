@@ -38,7 +38,8 @@ jobs:
         jupyter-book build .
     - name: Build PDF
       run: |
-        jb build . --builder pdfhtml --path-output ./_build/html/
+        jb build . --builder pdfhtml
+        cp _build/pdf/book.pdf _build/html/tre_eoi.pdf
     # Deploy html to gh-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
