@@ -48,26 +48,26 @@ The _Ethical Assurance, Clinical & Information Governance Frameworks_ will promo
 The interoperability and open-source assets that power the facility will ‘future-proof’ it to comply with and adapt to technical requirements imposed by national & international funders, enable peer review, and retention of skilled staff to maintain, develop and exploit it.
 It will reduce data & process duplication and improve analytic efficiencies across the health and social care economy, and facilitate collaboration with industry to get value of out data
 
-### SAFE SETTINGS
+### Safe Settings
 
 - Secure, customisable, scalable, collaborative, cost-effective environments for advanced data analytics
 
-### SAFE PROJECTS
+### Safe Projects
 
 - TRE DARS + Existing processes (eg. REC)
 
-### SAFE PEOPLE
+### Safe People
 
 - Researcher training, accreditation; Identity management; User access lifecycle management
 
-### SAFE DATA
+### Safe Data
 
 - Data/Metadata catalogues to empower self-discovery of data assets for research.
 - Common data models for federated research
 - Privacy preserving architectures such as OpenSAFELY
 - Pseudonymisation/anonymisation depending on use cases
 
-### SAFE OUTPUTS
+### Safe Outputs
 
 - SDC, ML model lifecycle management, explainability tools,
 - Interoperability with other visualisation / decision support tools
@@ -114,7 +114,16 @@ It will reduce data & process duplication and improve analytic efficiencies acro
 
 ## OHDSI Analytics Stack
 
-__[OHDSI (Observational Health Data Sciences and Informatics)](https://www.ohdsi.org/)__ is multi-stakeholder, interdisciplinary collaborative to derive value out of health data through large-scale analytics using open-source tools
+__[OHDSI (Observational Health Data Sciences and Informatics)](https://www.ohdsi.org/)__ is multi-stakeholder, interdisciplinary collaborative to derive value out of health data through large-scale analytics using open-source tools.
+It is composed of multiple components as described below.
+LSC has committed to a 3-year program work that started in Q1/2022 to map secondary care data into the OMOP model and make it available through the OHDSI analytics stack.
+
+```{figure} ./images/ohdsi_stack.png
+---
+width: 800px
+---
+[The OHDSI Ecosystem](https://www.ohdsi.org/)
+```
 
 The __[OMOP - Common Data Model](https://www.ohdsi.org/data-standardization/)__ allows for the systematic analysis of disparate observational databases by transforming data contained within those databases into a common format (data model).
 This allows for federated analyses of multiple such databases held at different sites using standard analytic routines without the need to share the underlying data.
@@ -144,8 +153,8 @@ __[HADES](https://ohdsi.github.io/Hades/)__ is a set of open source R packages f
 
 __OHDSI International Community__
 
-Global collaborators: <https://www.ohdsi.org/who-we-are/collaborators/>
-UK Partners: <https://www.ehden.eu/datapartners/>
+- Global collaborators: <https://www.ohdsi.org/who-we-are/collaborators/>
+- UK data partners: <https://www.ehden.eu/datapartners/>
 
 ## AzureTRE
 
