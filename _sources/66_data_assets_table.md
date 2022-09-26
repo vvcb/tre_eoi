@@ -7,6 +7,8 @@ Please complete the table below and attach it with EOI Questions and Response te
 ```{list-table} Data Assets Table: North West
 :header-rows: 1
 :name: data-assets-table
+:align: left
+:widths: 25,75
 
 * - Item
   - Details

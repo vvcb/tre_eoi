@@ -1,0 +1,17 @@
+@media print {
+  .bd-toc {
+    visibility: hidden;
+  }
+
+  body {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  #main-content {
+    max-width: 100%;
+  }
+
+  h2 {
+    page-break-before: always;
+  }
+}
