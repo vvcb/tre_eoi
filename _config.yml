@@ -34,7 +34,7 @@ html:
   use_repository_button: true
   extra_navbar: |
     <p>
-      <a href="tre_eoi.pdf">Download PDF.</a>
+      <a href="tre_eoi.pdf">Download PDF</a>
     </p>
     <p>
       <a href="https://github.com/vvcb/tre_eoi/commits/main">View Commit History</a>

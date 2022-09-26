@@ -11,6 +11,7 @@ chapters:
 - file: 50_key_research_partnerships
 - file: 60_technology_and_data
 - file: 65_data_assets
+- file: 66_data_assets_table
 - file: 70_operations
 - file: 73_governance_sde
 - file: 75_governance_ig_ethics
