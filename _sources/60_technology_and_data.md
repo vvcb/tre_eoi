@@ -1,4 +1,4 @@
-# TECHNOLOGY AND DATA
+# Technology And Data
 
 Todo:
 

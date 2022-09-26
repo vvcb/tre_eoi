@@ -1,4 +1,4 @@
-# OPERATIONS
+# Operations
 
 ```{note}
 Describe the operational model for your SDE for R&D. This should cover:
