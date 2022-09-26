@@ -1,8 +1,10 @@
-# KEY RESEARCH PARTNERSHIPS
+# Key Research Partnerships
 
 - [ ] Need details on Neurosciences Exemplar TRE - brief section here and a longer version as supporting documentation.
 - [ ] Data science student placements and complementary peers projects
 - [ ] Modify complementary peers image with NWTRE team instead of LTH datascience team
+- [ ] Move all projects already completed or currently in progress within the LSC TRE into the first section.
+- [ ] Add brief description of each project - aims, data set, deliverables/outputs, stakeholders
 
 ```{note}
 Describe existing successful research partnerships within your locality, particularly those focused on large-scale data sharing and analysis. This may include partnerships with Life Sciences or MedTech companies, Academia, or not-for-profit organisations.

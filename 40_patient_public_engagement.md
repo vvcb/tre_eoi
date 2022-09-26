@@ -1,4 +1,4 @@
-# PATIENT AND PUBLIC ENGAGEMENT
+# Patient And Public Engagement
 
 ```{note}
 What patient and public engagement activities have you completed which contribute to this project and what were the outcomes?  

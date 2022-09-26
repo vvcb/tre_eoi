@@ -1,4 +1,4 @@
-# SCRAPBOOK
+# Scrapbook
 
 ## TRE vs SDE vs IDL
 

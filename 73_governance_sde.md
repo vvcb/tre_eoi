@@ -1,4 +1,4 @@
-# GOVERNANCE  
+# Governance  
 
 ```{note}
 Describe the leadership and governance structure for your SDE for R&D.

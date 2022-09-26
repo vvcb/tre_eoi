@@ -1,4 +1,4 @@
-# INFORMATION GOVERNANCE AND ETHICS
+# Information Governance And Ethics
 
 ```{note}
 Describe the process researchers will go through to obtain permissions to access and analyse data in a workspace in your SDE for R&D. This should cover:
